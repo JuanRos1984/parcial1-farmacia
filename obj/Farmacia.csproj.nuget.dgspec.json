@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Formacion\\2026-C-3\\Documentos_ITLA_por_materia (2)\\Programacion_III\\nota_tecnica_docente\\parcial1\\repos\\parcial1-farmacia\\Farmacia.csproj": {}
+    "C:\\Users\\Jamilet\\parcial1-2025-1958\\Farmacia.csproj": {}
   },
   "projects": {
-    "C:\\Formacion\\2026-C-3\\Documentos_ITLA_por_materia (2)\\Programacion_III\\nota_tecnica_docente\\parcial1\\repos\\parcial1-farmacia\\Farmacia.csproj": {
+    "C:\\Users\\Jamilet\\parcial1-2025-1958\\Farmacia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Formacion\\2026-C-3\\Documentos_ITLA_por_materia (2)\\Programacion_III\\nota_tecnica_docente\\parcial1\\repos\\parcial1-farmacia\\Farmacia.csproj",
+        "projectUniqueName": "C:\\Users\\Jamilet\\parcial1-2025-1958\\Farmacia.csproj",
         "projectName": "Farmacia",
-        "projectPath": "C:\\Formacion\\2026-C-3\\Documentos_ITLA_por_materia (2)\\Programacion_III\\nota_tecnica_docente\\parcial1\\repos\\parcial1-farmacia\\Farmacia.csproj",
-        "packagesPath": "C:\\Users\\administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Formacion\\2026-C-3\\Documentos_ITLA_por_materia (2)\\Programacion_III\\nota_tecnica_docente\\parcial1\\repos\\parcial1-farmacia\\obj\\",
+        "projectPath": "C:\\Users\\Jamilet\\parcial1-2025-1958\\Farmacia.csproj",
+        "packagesPath": "C:\\Users\\Jamilet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jamilet\\parcial1-2025-1958\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Jamilet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

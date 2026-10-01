@@ -2,7 +2,11 @@ namespace Farmacia;
 
 public static class Precios
 {
+<<<<<<< HEAD
     public const decimal MontoMinimoDescuento = 3000m;
+=======
+    public const decimal MontoMinimoDescuento = 1000m;
+>>>>>>> 0cbe1c0 (Baja el monto mínimo de descuento a 1000)
 
     public const decimal Itbis = 0.18m;
 
