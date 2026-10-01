@@ -2,12 +2,8 @@ namespace Farmacia;
 
 public static class Precios
 {
-<<<<<<< HEAD
-    public const decimal MontoMinimoDescuento = 3000m;
-=======
-    public const decimal MontoMinimoDescuento = 1000m;
->>>>>>> 0cbe1c0 (Baja el monto mínimo de descuento a 1000)
 
+    public const decimal MontoMinimoDescuento = 1000m;
     public const decimal Itbis = 0.18m;
 
     // Suma cantidad por precio unitario de cada línea.
@@ -19,4 +15,7 @@ public static class Precios
 
     public static decimal Descuento(decimal subtotal) =>
         subtotal >= MontoMinimoDescuento ? Math.Round(subtotal * 5m / 100m, 2) : 0m;
+
+    public static decimal CargoEnvio(decimal subtotal) =>
+        subtotal >= 2000m ? 0m : 100m;
 }
