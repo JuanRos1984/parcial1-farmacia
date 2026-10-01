@@ -19,6 +19,9 @@ public static class Pruebas
             ("Sin descuento en compras pequeñas", Precios.Descuento(100m) == 0m),
             ("Sin descuento justo debajo del mínimo", Precios.Descuento(2499m) == 0m),
             ("Descuento desde el mínimo de 2500", Precios.Descuento(2500m) == 125m),
+            ("Envío de 100 por debajo de 2000", Precios.CargoEnvio(100m) == 100m),
+            ("Envío gratis desde 2000", Precios.CargoEnvio(2000m) == 0m),
+            ("El resumen con envío muestra el envío", Reporte.ResumenConEnvio(Compra).Contains("Envío")),
         };
 
         int fallas = 0;
