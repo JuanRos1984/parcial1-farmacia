@@ -15,6 +15,9 @@ public static class Pruebas
             ("El subtotal suma cantidad por precio", Precios.CalcularSubtotal(Compra) == 490m),
             ("El ITBIS es el 18 % del subtotal", Precios.Impuesto(100m) == 18m),
             ("El resumen muestra el total", Reporte.Resumen(Compra).Contains("Total")),
+            ("Envío de 100 por debajo de 2000", Precios.CargoEnvio(100m) == 100m),
+            ("Envío gratis desde 2000", Precios.CargoEnvio(2000m) == 0m),
+            ("El resumen con envío muestra el envío", Reporte.ResumenConEnvio(Compra).Contains("Envío")),
         };
 
         int fallas = 0;
