@@ -1,0 +1,13 @@
+# Secretos: nunca deben versionarse
+.env
+
+# Artefactos de compilacion de .NET
+bin/
+obj/
+
+# Archivos de usuario del IDE
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
