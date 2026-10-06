@@ -1,0 +1,9 @@
+# Archivos generados por la compilación
+bin/
+obj/
+*.user
+.vs/
+
+# Secretos
+appsettings.Secret.json
+.env
