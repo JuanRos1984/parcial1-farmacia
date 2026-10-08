@@ -12,9 +12,13 @@ public static class Pruebas
     {
         var casos = new List<(string Nombre, bool Paso)>
         {
-            ("El subtotal suma cantidad por precio", Precios.CalcularSubtotal(Compra) == 490m),
+            ("El subtotal suma cantidad por precio", Precios.Subtotal(Compra) == 490m),
             ("El ITBIS es el 18 % del subtotal", Precios.Impuesto(100m) == 18m),
             ("El resumen muestra el total", Reporte.Resumen(Compra).Contains("Total")),
+            ("Descuento del 5 % en compras grandes", Precios.Descuento(20000m) == 1000m),
+            ("Sin descuento en compras pequeñas", Precios.Descuento(100m) == 0m),
+            ("Sin descuento justo debajo del mínimo", Precios.Descuento(2499m) == 0m),
+            ("Descuento desde el mínimo de 2500", Precios.Descuento(2500m) == 125m),
         };
 
         int fallas = 0;
