@@ -22,6 +22,8 @@ public static class Pruebas
             ("Envío de 100 por debajo de 2000", Precios.CargoEnvio(100m) == 100m),
             ("Envío gratis desde 2000", Precios.CargoEnvio(2000m) == 0m),
             ("El resumen con envío muestra el envío", Reporte.ResumenConEnvio(Compra).Contains("Envío")),
+            ("Rechaza cantidad cero", RechazaCantidad(0)),
+            ("Rechaza cantidad negativa", RechazaCantidad(-1)),
         };
 
         int fallas = 0;
@@ -32,5 +34,18 @@ public static class Pruebas
         }
         Console.WriteLine(fallas == 0 ? "Todas las pruebas pasan." : $"{fallas} prueba(s) fallan.");
         return fallas == 0 ? 0 : 1;
+    }
+
+    private static bool RechazaCantidad(int cantidad)
+    {
+        try
+        {
+            _ = new Linea("Prueba", cantidad, 1m);
+            return false;
+        }
+        catch (ArgumentException)
+        {
+            return true;
+        }
     }
 }
